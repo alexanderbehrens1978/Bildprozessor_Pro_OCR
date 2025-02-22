@@ -1,7 +1,4 @@
-# modules/poppler_manager.py
-import os
-import sys
-import subprocess
+import os, sys, subprocess
 from tkinter import messagebox, Toplevel, Label, Entry, Button, filedialog
 from modules.utils import get_program_path
 
@@ -55,14 +52,3 @@ def show_poppler_url():
     entry.insert(0, url)
     entry.pack(padx=10, pady=5)
     Button(top, text="Schließen", command=top.destroy).pack(pady=10)
-
-def set_poppler_path():
-    """
-    Öffnet einen Dialog, um den Poppler-Pfad zu setzen.
-    Gibt den ausgewählten Pfad zurück.
-    """
-    prog_path = get_program_path()
-    path = filedialog.askdirectory(title="Wähle den Poppler-Library-Bin-Ordner", initialdir=prog_path)
-    if path:
-        messagebox.showinfo("Poppler Pfad", f"Poppler Pfad gesetzt auf:\n{path}")
-    return path

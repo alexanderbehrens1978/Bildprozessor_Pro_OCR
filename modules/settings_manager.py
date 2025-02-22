@@ -1,4 +1,3 @@
-# modules/settings_manager.py
 import json, os
 from tkinter import messagebox
 from modules.utils import get_program_path

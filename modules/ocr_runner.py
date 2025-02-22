@@ -1,4 +1,3 @@
-# modules/ocr_runner.py
 import tkinter as tk
 from tkinter import messagebox
 from PIL import ImageTk
@@ -8,6 +7,7 @@ def run_ocr_op(app_instance):
     if app_instance.processed_image is None:
         messagebox.showwarning("Kein Bild", "Bitte laden Sie ein Bild und wenden Sie Filter an, bevor OCR ausgeführt wird.")
         return
+    # Standard: tesseract_cpu
     ocr_func = get_ocr_module("tesseract_cpu")
     try:
         processed, results = ocr_func(app_instance.processed_image.copy(), lang='deu')

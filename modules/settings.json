@@ -3,15 +3,15 @@
     "layers": [
         {
             "layer": 1,
-            "enabled": true,
-            "filter": "Negativ",
-            "strength": 0.04
+            "enabled": false,
+            "filter": "Kantenerkennung",
+            "strength": 0.0
         },
         {
             "layer": 2,
             "enabled": true,
             "filter": "Multiplikation",
-            "strength": 0.85
+            "strength": 0.39
         },
         {
             "layer": 3,
@@ -22,12 +22,12 @@
         {
             "layer": 4,
             "enabled": true,
-            "filter": "Graustufen",
+            "filter": "Kontrast",
             "strength": 1.0
         },
         {
             "layer": 5,
-            "enabled": true,
+            "enabled": false,
             "filter": "Edge Enhance",
             "strength": 1.0
         }

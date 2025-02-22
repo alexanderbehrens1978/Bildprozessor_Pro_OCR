@@ -1,4 +1,3 @@
-# main.py
 import tkinter as tk
 from modules.image_processor_app import ImageProcessorApp
 

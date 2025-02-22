@@ -1,4 +1,3 @@
-# modules/filters.py
 from PIL import Image, ImageOps, ImageChops, ImageEnhance, ImageFilter
 
 def apply_filter(img, filter_name, strength=1.0):

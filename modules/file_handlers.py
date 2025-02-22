@@ -1,4 +1,3 @@
-# modules/file_handlers.py
 import os
 from tkinter import filedialog, messagebox
 from PIL import Image
@@ -22,10 +21,9 @@ def load_image_file(app_instance):
                 app_instance.original_image = Image.open(file_path).convert("RGB")
             app_instance.filename = os.path.basename(file_path)
             app_instance.filename_label.config(text=app_instance.filename)
+            from modules.image_ops import show_image_op, update_image_op
             if app_instance.left_canvas:
-                from modules.image_ops import show_image_op
                 show_image_op(app_instance.original_image, app_instance.left_canvas)
-            from modules.image_ops import update_image_op
             update_image_op(app_instance)
         except Exception as e:
             messagebox.showerror("Fehler", f"Konnte Bild laden: {str(e)}")

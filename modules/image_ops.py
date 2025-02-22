@@ -1,4 +1,3 @@
-# modules/image_ops.py
 from PIL import ImageTk
 from modules.filters import apply_filter
 
