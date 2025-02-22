@@ -1,0 +1,35 @@
+{
+    "poppler_path": "C:/Users/axell/source/Amando-Sol/Bildprozessor_Pro_OCR/modules/poppler/Library/bin",
+    "layers": [
+        {
+            "layer": 1,
+            "enabled": true,
+            "filter": "Negativ",
+            "strength": 0.04
+        },
+        {
+            "layer": 2,
+            "enabled": true,
+            "filter": "Multiplikation",
+            "strength": 0.85
+        },
+        {
+            "layer": 3,
+            "enabled": false,
+            "filter": "Adaptive Threshold",
+            "strength": 0.9
+        },
+        {
+            "layer": 4,
+            "enabled": false,
+            "filter": "Negativ",
+            "strength": 1.0
+        },
+        {
+            "layer": 5,
+            "enabled": false,
+            "filter": "Negativ",
+            "strength": 1.0
+        }
+    ]
+}
