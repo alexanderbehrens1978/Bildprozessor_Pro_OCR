@@ -1,0 +1,8 @@
+# Ignoriere IDE-spezifische Dateien
+.idea/
+
+# Ignoriere Bytecode/Cache
+__pycache__/
+
+# Weitere Einträge nach Bedarf...
+
